@@ -346,109 +346,9 @@ This repository builds upon:
 
 ---
 
-## ⚙️ Installation & Setup
 
-### Prerequisites
-```bash
-Python 3.8+
-CUDA 11.8+ (for GPU training)
-```
 
-### Quick Start
-```bash
-# Clone the repository
-git clone https://github.com/vishnudas08/pytorch-internals-mastery.git
-cd pytorch-internals-mastery
 
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run a sample notebook
-jupyter notebook 01_workflow_fundamentals/training_loop.ipynb
-```
-
-### GPU Setup
-```bash
-# Verify PyTorch sees your GPU
-python -c "import torch; print(torch.cuda.is_available())"
-```
-
----
-
-## 🧪 Sample Training Workflow
-```python
-import torch
-import torch.nn as nn
-from torch.utils.data import DataLoader
-
-# 1. Data Preparation
-train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
-
-# 2. Model Definition
-model = CustomCNN().to(device)
-
-# 3. Training Loop
-for epoch in range(epochs):
-    model.train()
-    for X_batch, y_batch in train_loader:
-        X_batch, y_batch = X_batch.to(device), y_batch.to(device)
-        
-        # Forward pass
-        y_pred = model(X_batch)
-        loss = loss_fn(y_pred, y_batch)
-        
-        # Backward pass
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
-    
-    # Evaluation
-    model.eval()
-    with torch.no_grad():
-        val_loss = evaluate(model, val_loader)
-    
-    print(f"Epoch {epoch+1}: Train Loss={loss:.4f}, Val Loss={val_loss:.4f}")
-```
-
----
-
-## 🐛 Common Issues & Solutions
-
-| Issue | Cause | Fix |
-|-------|-------|-----|
-| **Out of Memory (OOM)** | Batch size too large | Reduce batch size or use gradient accumulation |
-| **Shape Mismatch** | Incorrect tensor dimensions | Print shapes at each layer |
-| **Device Error** | CPU/GPU mismatch | Ensure model and data on same device |
-| **Slow Training** | CPU training or inefficient data loading | Use GPU, set `num_workers` in DataLoader |
-| **NaN Loss** | Learning rate too high or unstable gradients | Reduce LR, add gradient clipping |
-
----
-
-## 🚀 What's Next?
-
-### Short-term (Next 2-4 weeks)
-- [ ] Complete custom dataset module
-- [ ] Implement transfer learning projects
-- [ ] Add experiment tracking with W&B
-- [ ] Deploy 2 models via Streamlit
-
-### Medium-term (1-3 months)
-- [ ] Advanced CV: Vision Transformers, DETR
-- [ ] Multi-modal learning (CLIP-style)
-- [ ] Edge deployment (ONNX, TensorRT)
-- [ ] MLOps pipeline with DVC + GitHub Actions
-
-### Long-term (3-6 months)
-- [ ] Contribute to PyTorch ecosystem
-- [ ] Research paper implementations
-- [ ] Production-scale CV system
-- [ ] Open-source ML tool development
-
----
 
 ## 💼 Connect With Me
 
@@ -462,9 +362,9 @@ I'm available for **freelance projects** and **ML engineering roles**.
 
 ### 📬 **Contact**
 - **GitHub**: [github.com/vishnudas08](https://github.com/vishnudas08)
-- **Upwork**: [Your Upwork Profile]
-- **LinkedIn**: [Your LinkedIn]
-- **Email**: your.email@example.com
+- **Upwork**: https://www.upwork.com/freelancers/~01c20c55490fdee5c2?mp_source=share
+- **LinkedIn**: https://www.linkedin.com/in/darla-vishnu-69763a224/
+- **Email**: vishnudaslog2002@gmail.com
 
 ---
 
@@ -474,32 +374,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## ⭐ Support This Repository
 
-If this repository helps you master PyTorch:
 
-- ⭐ **Star this repo** to show appreciation
-- 🍴 **Fork it** for your own learning journey
-- 📢 **Share it** with fellow ML enthusiasts
-- 💬 **Open issues** for questions or suggestions
-- 🤝 **Contribute** with improvements or fixes
-
----
-
-## 🙏 Acknowledgments
-
-- PyTorch team for the incredible framework
-- Zero to Mastery course for structured learning
-- Open-source ML community for inspiration
-- Everyone who stars and contributes to this repo
-
----
 
 <div align="center">
 
 **Built with ❤️, PyTorch, and a lot of ☕**
 
-**Made by [Vishnu Das](https://github.com/vishnudas08)**
+**Made by [Vishnu](https://github.com/vishnudas08)**
 
 *"Understanding beats memorizing, always."*
 
