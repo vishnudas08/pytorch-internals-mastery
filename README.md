@@ -83,20 +83,20 @@ pytorch-internals-mastery/
 | **00. PyTorch Fundamentals** | Tensors, dtypes, device | Shape tracking, GPU operations | ✅ Complete |
 | **01. Workflow Fundamentals** | Training loops, optimization | Forward/backward pass, gradient flow | ✅ Complete |
 | **02. Neural Network Classification** | Binary/multi-class | Loss functions, evaluation metrics | ✅ Complete |
-| **03. Computer Vision** | CNN architectures | Image processing, augmentation | 🔄 40% Complete |
-| **04. Custom Datasets** | DataLoader internals | Batch processing, transforms | 📋 Next |
-| **05. Going Modular** | Production patterns | Modular training, utilities | 📋 Planned |
-| **06. Transfer Learning** | Pre-trained models | Fine-tuning strategies | 📋 Planned |
-| **07. Experiment Tracking** | MLOps tools | Version control, metrics | 📋 Planned |
-| **08. Paper Replicating** | Research implementation | SOTA architectures | 📋 Planned |
-| **09. Model Deployment** | Production deployment | API, containerization | 📋 Planned |
+| **03. Computer Vision** | CNN, Detection, Segmentation | **PRIMARY FOCUS** | ✅  Complete |
+| **04. Custom Datasets** | DataLoader internals | CV-specific pipelines | ✅ 90% Complete |
+| **05. Going Modular** | Production patterns | Modular CV code | ✅ 75% Complete |
+| **06. Transfer Learning** | Pre-trained models | ResNet, EfficientNet fine-tuning | ✅ 80% Complete |
+| **07. Experiment Tracking** | MLOps tools | Version control, metrics | 🔄 50% Complete |
+| **08. Paper Replicating** | Research implementation | SOTA CV architectures | 🔄 30% Complete |
+| **09. Model Deployment** | Streamlit, Docker | **EXPERIENCED** | ✅ 70% Complete |
 
 **Overall Progress:**
 ```
-Fundamentals:    ████████████████████ 100%
-Computer Vision: ████████░░░░░░░░░░░░  40%
-MLOps:           ██░░░░░░░░░░░░░░░░░░  10%
-Deployment:      █░░░░░░░░░░░░░░░░░░░   5%
+Fundamentals:        ████████████████████ 100%
+Computer Vision:     █████████████████░░░  85%
+Deployment:          ██████████████░░░░░░  70%
+MLOps & Tracking:    ██████████░░░░░░░░░░  50%
 ```
 
 ---
