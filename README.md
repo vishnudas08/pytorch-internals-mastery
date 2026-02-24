@@ -364,7 +364,7 @@ I'm available for **freelance projects** and **ML engineering roles**.
 - **GitHub**: [github.com/vishnudas08](https://github.com/vishnudas08)
 - **Upwork**: https://www.upwork.com/freelancers/~01c20c55490fdee5c2?mp_source=share
 - **LinkedIn**: https://www.linkedin.com/in/darla-vishnu-69763a224/
-- **Email**: vishnudaslog2002@gmail.com
+
 
 ---
 
